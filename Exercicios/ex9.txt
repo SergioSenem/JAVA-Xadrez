@@ -1,0 +1,13 @@
+9. (0.15) O "desenho" das peças no terminal está na mesma classe que controla a lógica da peça. 
+Faça uma sugestão de como separar estas duas partes. (Não é preciso necessariamente implementar).
+
+R: Deve-se retirar das classes do jogo qualquer conversa direta com a tela, trocando por apenas resultados das funções em forma de variaveis brutas,
+como int, string, lista de classes, etc. Então criar uma classe que conceitualmente é uma classe externa, que "monta as peças" da classe do jogo
+e apresenta para o usuário na forma de uma interface ou na linha de comando.
+
+Uma sugestão extra seria separar o tabuleiro e o jogo de xadrez, de modo que conceitualmente as classes de ambos sejam coisas independentes um do outro,
+exemplo, a classe tabuleiro e peça serem reaproveitados para criar um jogo de damas.
+
+Ambas as sugestões são boas práticas para aumentar a flexibilidade do código, não limitando o código apenas à um modo de interagir com o usuário,
+em teoria, as mesmas classes poderiam ser utilizadas em dois programas diferentes, um que permita o usuário jogar em uma interface e outro que o faça jogar
+em um terminal de comandos.

@@ -1,0 +1,5 @@
+3. (0.10) Tente criar um objeto do tipo Peca. O que acontece? Porquê? (pesquisar o que é uma classe abstrata).
+
+R: Não é permitido criar um objeto do tipo Peca, pois Peca é uma classe abstrata, ou seja, esta não representa algo do mundo fisico, 
+pelo menos, não por completo, classes abstratas podem ser representações genéricas de algo para servir de base para classes concretas 
+ou simplesmente armazenar métodos estáticos, se tornando algo como uma Interface.

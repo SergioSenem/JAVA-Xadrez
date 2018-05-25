@@ -1,0 +1,67 @@
+2. (0.05) Crie todas as peças necessárias para que o jogo de xadrez funcione.
+
+R:
+
+	public class Rei extends Peca{
+
+		public Rei(int cor){
+			super(cor);
+		}
+
+		@Override
+		public String getPecaIcone(){
+			if(this.cor == Peca.BRANCA){
+				return "r";
+			}else{
+				return "R";
+			}
+		}
+	}
+
+	public class Rainha extends Peca{
+
+		public Rainha(int cor){
+			super(cor);
+		}
+
+		@Override
+		public String getPecaIcone(){
+			if(this.cor == Peca.BRANCA){
+				return "d";
+			}else{
+				return "D";
+			}
+		}
+	}
+
+	public class Bispo extends Peca{
+
+		public Bispo(int cor){
+			super(cor);
+		}
+
+		@Override
+		public String getPecaIcone(){
+			if(this.cor == Peca.BRANCA){
+				return "b";
+			}else{
+				return "B";
+			}
+		}
+	}
+
+	public class Cavalo extends Peca{
+
+		public Cavalo(int cor){
+			super(cor);
+		}
+
+		@Override
+		public String getPecaIcone(){
+			if(this.cor == Peca.BRANCA){
+				return "c";
+			}else{
+				return "C";
+			}
+		}
+	}

@@ -1,0 +1,33 @@
+4. (0.10) Crie uma nova classe que desenhe o tabuleiro de forma diferente, mas sem reimplementar o método desenhar.
+
+R: 
+
+	public abstract class DesenharSemReimplementar {
+		
+		public static String desenhar(Tabuleiro tabuleiro){
+			
+			String desenho = "";
+			
+			for(int i = 0; i < tabuleiro.getAltura(); i++ ){
+			
+				for(int j = 0; j <tabuleiro.getLargura(); j++){
+					
+					if(tabuleiro.getCasaNaPosicao(i, j).temPeca()){
+						desenho += tabuleiro.getCasaNaPosicao(i, j).getPeca().getPecaIcone();
+					}
+					else{
+						desenho += "-";
+					}
+					
+					desenho += " ";
+				
+				}
+				
+				desenho += "\n";
+				
+			}
+			
+			return desenho;
+		}
+		
+	}

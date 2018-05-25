@@ -1,0 +1,3 @@
+1. (0.05) Mude o tabuleiro para que tenha o tamanho real de um jogo de xadrez.
+
+R: Tabuleiro tabuleiro = new Tabuleiro(8,8);
